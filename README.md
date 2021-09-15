@@ -44,3 +44,11 @@ Only applied to flex-items. Default value of flex-grow is `zero`. Because even t
 ## 19 - flex-shrink
 
 Only applies to flex-items. Default value of flex-shrink is `one`. The combination of `width` and `flex-shrink` can be super useful.
+
+## 26 - the basics of flex-basis
+
+The default of flex-basis is `auto`. If flex-basis is not declared or if it's set as auto, flex-items will look at `width` property. If flex-direction property is row, then flex-basis behaves same as width. Flex-basis doesn't look at the width of element, it looks at the size of main axis of it's flex parent.
+
+## 30 - justification-basics
+
+The default value of justify-content is `flex-start`. justify-content is relative to main axis. `space-around` takes all the space and evenly distribute around each items. `space-between` leaves the end item to far left and fat right and distributes the spaces between each item. `space-evenly` distributes the space evenly around each items.
