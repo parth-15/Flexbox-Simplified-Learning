@@ -20,3 +20,27 @@ Difference between width `auto` and `100%`: https://stackoverflow.com/questions/
 ## 11 - the flex items- part 4
 
 All the flex-items match in height i.e. their heights are same. If we lower the height of one flex item, only it's height will get lowered. By default, height is `stretched` to match the siblings.
+
+## 14 - flex-direction basics
+
+When we declare `flex-direction` as row, each flex items will be columns.The main idea here is the flex-container itself is one row and therefore, it's child will be columns for one row. Default `flex-direction` is row.
+
+## 15 - collapsing margins
+
+By default, when we are not in the world of flex, margin collapses so that we don't have double space. Margin doesn't collapse in flex.
+
+## 16 - flex-direction part 2
+
+It is suggested to wrap images inside div. It is also easier to add more content afterwards. `flex-direction` is used to change the order of content. HTML structure is most important. Only use row-reverse or column-reverse if it is atmost necessary.
+
+## 17 - the order property
+
+Only use order if it is atmost necessary. It is possible to change individual order of flex-items. Order property will only work on flex-items. By default order is `zero`. If two items have same order, they will be in the order of their HTML.
+
+## 18 - flex-grow
+
+Only applied to flex-items. Default value of flex-grow is `zero`. Because even though there is space, flex-items won't expand to fill up the leftover space. Negative value in flex-grow property defaults to 1.
+
+## 19 - flex-shrink
+
+Only applies to flex-items. Default value of flex-shrink is `one`. The combination of `width` and `flex-shrink` can be super useful.
